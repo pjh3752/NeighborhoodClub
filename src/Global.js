@@ -1,0 +1,1 @@
+global.iconText = "동네클럽";
