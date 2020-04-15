@@ -6,7 +6,7 @@ import {
 import styles from "../../assets/style/Styles";
 
 export const SplashScreen = () => (
-  <View style={styles.container}>
+  <View style={styles.signInContainer}>
     <Text>Loading...</Text>
   </View>
 );

@@ -32,11 +32,7 @@ module.exports = StyleSheet.create({
     textInputButton: {
         width: 288,
         height: 50,
-        borderColor: 'gray',
         backgroundColor: 'white',
-        borderWidth: 0.3,
-        borderRadius: 2,
-        paddingVertical: 10,
     },
     signInButton: {
         width: '110%',

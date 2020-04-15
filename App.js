@@ -1,4 +1,9 @@
 import React from "react";
+import { 
+  AsyncStorage,
+  Alert,
+} from "react-native";
+
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
@@ -21,7 +26,7 @@ const MainStackScreen = () => (
       options={{ title: "시작하기" }}
     />
     <MainStack.Screen
-      name="Login"
+      name="SignIn"
       component={SignInScreen}
       options={{ title: "로그인" }}
     />
@@ -90,10 +95,10 @@ const RootStackScreen = ({ userToken }) => (
 export default () => {
   const [isLoading, setIsLoading] = React.useState(true);
   const [userToken, setUserToken] = React.useState(null);
-
+  
   const authContext = React.useMemo(() => {
     return {
-      signIn: () => {
+      signIn: (email, password) => {
         setIsLoading(false);
         setUserToken("asdf");
       },

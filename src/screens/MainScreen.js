@@ -15,7 +15,7 @@ export const MainScreen = ({ navigation }) => (
         <FooterButton
             style={styles.signInButton}
             title="로그인"
-            onPress={() => navigation.navigate('Login')}
+            onPress={() => navigation.navigate('SignIn')}
         />
         <Text style={styles.noAccountText}>계정이 없으신가요?</Text>
         <TouchableOpacity
